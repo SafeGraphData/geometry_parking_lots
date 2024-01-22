@@ -55,4 +55,4 @@ fig.update_layout(
 )
 fig.update_layout(height=800, width=1400) 
 st.write('See the map below, where states are shaded based on the percentage of POI that have an associated parking lot POI')
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width=True)
