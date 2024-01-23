@@ -56,3 +56,19 @@ fig.update_layout(
 fig.update_layout(height=800, width=1400) 
 st.write('See the map below, where states are shaded based on the percentage of POI that have an associated parking lot POI')
 st.plotly_chart(fig, use_container_width=True)
+
+
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+hide_decoration_bar_style = '''
+    <style>
+        header {visibility: hidden;}
+    </style>
+'''
+st.markdown(hide_decoration_bar_style, unsafe_allow_html=True)
