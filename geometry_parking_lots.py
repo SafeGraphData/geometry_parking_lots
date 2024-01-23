@@ -28,7 +28,7 @@ fig = px.choropleth(state_df,
                     hover_name='state',
                     locationmode='USA-states',  # Use predefined US state boundaries
                     scope='usa',  # Set the scope to 'usa'
-                    title='Parking Coverage by Region',
+                    #title='Parking Coverage by Region',
                      color_continuous_scale=px.colors.diverging.RdYlGn,  # Reverse Reds color scale
                     range_color=[40, 80],  # Specify the range for the color scale
                     )
@@ -54,7 +54,7 @@ fig.update_layout(
     )
 )
 fig.update_layout(height=800, width=1400) 
-st.write('See the map below, where states are shaded based on the percentage of POI that have an associated parking lot POI')
+#st.write('See the map below, where states are shaded based on the percentage of POI that have an associated parking lot POI')
 st.plotly_chart(fig, use_container_width=True)
 
 
