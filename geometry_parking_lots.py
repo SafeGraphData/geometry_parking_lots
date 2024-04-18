@@ -36,7 +36,7 @@ fig = px.choropleth(state_df,
 # Customize the background color
 fig.update_layout(
     geo=dict(
-        bgcolor='lightgray',  # Set the background color
+        bgcolor='white',  # Set the background color
     )
 )
 
